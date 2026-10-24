@@ -1,0 +1,67 @@
+▲ Next.js 16.4.3 (Turbopack)
+- Environments: .env
+✓ Running next.config.ts took 31ms
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 603ms
+  Running TypeScript ...
+  Finished TypeScript in 2.6s ...
+  Collecting page data using 3 workers ...
+  Generating static pages using 3 workers (0/20) ...
+  Generating static pages using 3 workers (5/20) 
+  Generating static pages using 3 workers (10/20) 
+  Generating static pages using 3 workers (15/20) 
+⨯ useSearchParams() should be wrapped in a suspense boundary at page "/verify-email". Read more: https://nextjs.org/docs/messages/missing-suspense-with-csr-bailout
+    at nb (/home/julio-perez/Datos/Proyectos/inmovenezuela/backend/node_modules/next/dist/compiled/next-server/app-page-turbo.runtime.prod.js:2:69690)
+    at Object.use (/home/julio-perez/Datos/Proyectos/inmovenezuela/backend/node_modules/next/dist/compiled/next-server/app-page-turbo.runtime.prod.js:2:74159)
+    at t.use (/home/julio-perez/Datos/Proyectos/inmovenezuela/backend/node_modules/next/dist/compiled/next-server/app-page-turbo.runtime.prod.js:2:191340)
+    at Object.o (/home/julio-perez/Datos/Proyectos/inmovenezuela/backend/.next/server/chunks/ssr/node_modules_next_19misn5bvv8e7._.js:1:15630)
+    at q (/home/julio-perez/Datos/Proyectos/inmovenezuela/backend/.next/server/chunks/ssr/node_modules_next_19misn5bvv8e7._.js:1:4535)
+    at /home/julio-perez/Datos/Proyectos/inmovenezuela/backend/.next/server/chunks/ssr/src_app_verify-email_page_tsx_0raugs1c98zqq._.js:1:171
+    at al (/home/julio-perez/Datos/Proyectos/inmovenezuela/backend/node_modules/next/dist/compiled/next-server/app-page-turbo.runtime.prod.js:2:86324)
+    at ac (/home/julio-perez/Datos/Proyectos/inmovenezuela/backend/node_modules/next/dist/compiled/next-server/app-page-turbo.runtime.prod.js:2:88140)
+    at ah (/home/julio-perez/Datos/Proyectos/inmovenezuela/backend/node_modules/next/dist/compiled/next-server/app-page-turbo.runtime.prod.js:2:110003)
+    at af (/home/julio-perez/Datos/Proyectos/inmovenezuela/backend/node_modules/next/dist/compiled/next-server/app-page-turbo.runtime.prod.js:2:107320)
+    at au (/home/julio-perez/Datos/Proyectos/inmovenezuela/backend/node_modules/next/dist/compiled/next-server/app-page-turbo.runtime.prod.js:2:86676)
+    at ac (/home/julio-perez/Datos/Proyectos/inmovenezuela/backend/node_modules/next/dist/compiled/next-server/app-page-turbo.runtime.prod.js:2:88185)
+    at ac (/home/julio-perez/Datos/Proyectos/inmovenezuela/backend/node_modules/next/dist/compiled/next-server/app-page-turbo.runtime.prod.js:2:106660)
+    at ah (/home/julio-perez/Datos/Proyectos/inmovenezuela/backend/node_modules/next/dist/compiled/next-server/app-page-turbo.runtime.prod.js:2:110003)
+    at af (/home/julio-perez/Datos/Proyectos/inmovenezuela/backend/node_modules/next/dist/compiled/next-server/app-page-turbo.runtime.prod.js:2:107320)
+    at aS (/home/julio-perez/Datos/Proyectos/inmovenezuela/backend/node_modules/next/dist/compiled/next-server/app-page-turbo.runtime.prod.js:2:115065)
+    at ap (/home/julio-perez/Datos/Proyectos/inmovenezuela/backend/node_modules/next/dist/compiled/next-server/app-page-turbo.runtime.prod.js:2:112064)
+    at ah (/home/julio-perez/Datos/Proyectos/inmovenezuela/backend/node_modules/next/dist/compiled/next-server/app-page-turbo.runtime.prod.js:2:110277)
+    at af (/home/julio-perez/Datos/Proyectos/inmovenezuela/backend/node_modules/next/dist/compiled/next-server/app-page-turbo.runtime.prod.js:2:107320)
+    at ac (/home/julio-perez/Datos/Proyectos/inmovenezuela/backend/node_modules/next/dist/compiled/next-server/app-page-turbo.runtime.prod.js:2:101342)
+    at ah (/home/julio-perez/Datos/Proyectos/inmovenezuela/backend/node_modules/next/dist/compiled/next-server/app-page-turbo.runtime.prod.js:2:110003)
+    at af (/home/julio-perez/Datos/Proyectos/inmovenezuela/backend/node_modules/next/dist/compiled/next-server/app-page-turbo.runtime.prod.js:2:107320)
+    at ah (/home/julio-perez/Datos/Proyectos/inmovenezuela/backend/node_modules/next/dist/compiled/next-server/app-page-turbo.runtime.prod.js:2:110238)
+    at af (/home/julio-perez/Datos/Proyectos/inmovenezuela/backend/node_modules/next/dist/compiled/next-server/app-page-turbo.runtime.prod.js:2:107320)
+    at ac (/home/julio-perez/Datos/Proyectos/inmovenezuela/backend/node_modules/next/dist/compiled/next-server/app-page-turbo.runtime.prod.js:2:106278)
+    at ah (/home/julio-perez/Datos/Proyectos/inmovenezuela/backend/node_modules/next/dist/compiled/next-server/app-page-turbo.runtime.prod.js:2:110003)
+    at af (/home/julio-perez/Datos/Proyectos/inmovenezuela/backend/node_modules/next/dist/compiled/next-server/app-page-turbo.runtime.prod.js:2:107320)
+    at au (/home/julio-perez/Datos/Proyectos/inmovenezuela/backend/node_modules/next/dist/compiled/next-server/app-page-turbo.runtime.prod.js:2:86676)
+    at ac (/home/julio-perez/Datos/Proyectos/inmovenezuela/backend/node_modules/next/dist/compiled/next-server/app-page-turbo.runtime.prod.js:2:88185)
+    at ah (/home/julio-perez/Datos/Proyectos/inmovenezuela/backend/node_modules/next/dist/compiled/next-server/app-page-turbo.runtime.prod.js:2:110003)
+    at af (/home/julio-perez/Datos/Proyectos/inmovenezuela/backend/node_modules/next/dist/compiled/next-server/app-page-turbo.runtime.prod.js:2:107320)
+    at aS (/home/julio-perez/Datos/Proyectos/inmovenezuela/backend/node_modules/next/dist/compiled/next-server/app-page-turbo.runtime.prod.js:2:115065)
+    at ap (/home/julio-perez/Datos/Proyectos/inmovenezuela/backend/node_modules/next/dist/compiled/next-server/app-page-turbo.runtime.prod.js:2:112064)
+    at ah (/home/julio-perez/Datos/Proyectos/inmovenezuela/backend/node_modules/next/dist/compiled/next-server/app-page-turbo.runtime.prod.js:2:110277)
+    at af (/home/julio-perez/Datos/Proyectos/inmovenezuela/backend/node_modules/next/dist/compiled/next-server/app-page-turbo.runtime.prod.js:2:107320)
+    at ac (/home/julio-perez/Datos/Proyectos/inmovenezuela/backend/node_modules/next/dist/compiled/next-server/app-page-turbo.runtime.prod.js:2:88104)
+    at ah (/home/julio-perez/Datos/Proyectos/inmovenezuela/backend/node_modules/next/dist/compiled/next-server/app-page-turbo.runtime.prod.js:2:110003)
+    at af (/home/julio-perez/Datos/Proyectos/inmovenezuela/backend/node_modules/next/dist/compiled/next-server/app-page-turbo.runtime.prod.js:2:107320)
+    at au (/home/julio-perez/Datos/Proyectos/inmovenezuela/backend/node_modules/next/dist/compiled/next-server/app-page-turbo.runtime.prod.js:2:86676)
+    at ac (/home/julio-perez/Datos/Proyectos/inmovenezuela/backend/node_modules/next/dist/compiled/next-server/app-page-turbo.runtime.prod.js:2:88185)
+    at ah (/home/julio-perez/Datos/Proyectos/inmovenezuela/backend/node_modules/next/dist/compiled/next-server/app-page-turbo.runtime.prod.js:2:110003)
+    at af (/home/julio-perez/Datos/Proyectos/inmovenezuela/backend/node_modules/next/dist/compiled/next-server/app-page-turbo.runtime.prod.js:2:107320)
+    at ac (/home/julio-perez/Datos/Proyectos/inmovenezuela/backend/node_modules/next/dist/compiled/next-server/app-page-turbo.runtime.prod.js:2:101342)
+    at ah (/home/julio-perez/Datos/Proyectos/inmovenezuela/backend/node_modules/next/dist/compiled/next-server/app-page-turbo.runtime.prod.js:2:110003)
+    at af (/home/julio-perez/Datos/Proyectos/inmovenezuela/backend/node_modules/next/dist/compiled/next-server/app-page-turbo.runtime.prod.js:2:107320)
+    at au (/home/julio-perez/Datos/Proyectos/inmovenezuela/backend/node_modules/next/dist/compiled/next-server/app-page-turbo.runtime.prod.js:2:86676)
+    at ac (/home/julio-perez/Datos/Proyectos/inmovenezuela/backend/node_modules/next/dist/compiled/next-server/app-page-turbo.runtime.prod.js:2:88185)
+    at ah (/home/julio-perez/Datos/Proyectos/inmovenezuela/backend/node_modules/next/dist/compiled/next-server/app-page-turbo.runtime.prod.js:2:110003)
+    at af (/home/julio-perez/Datos/Proyectos/inmovenezuela/backend/node_modules/next/dist/compiled/next-server/app-page-turbo.runtime.prod.js:2:107320)
+    at ac (/home/julio-perez/Datos/Proyectos/inmovenezuela/backend/node_modules/next/dist/compiled/next-server/app-page-turbo.runtime.prod.js:2:101342)
+Error occurred prerendering page "/verify-email". Read more: https://nextjs.org/docs/messages/prerender-error
+Export encountered an error on /verify-email/page: /verify-email, exiting the build.
+⨯ Next.js build worker exited with code: 1 and signal: null

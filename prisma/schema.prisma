@@ -1,0 +1,103 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// Tipos de usuario en la plataforma
+enum UserRole {
+  ADMIN
+  SELLER
+}
+
+// Tipos de inmuebles
+enum PropertyType {
+  APARTMENT
+  HOUSE
+  LAND
+  OFFICE
+  COMMERCIAL
+}
+
+// Tipo de operación
+enum OperationType {
+  SALE
+  RENT
+  BOTH
+}
+
+enum Role {
+  ADMIN
+  SELLER
+}
+
+model User {
+  id            String   @id @default(cuid())
+  email         String   @unique
+  username      String   @unique
+  passwordHash  String
+  fullName      String
+  phone         String?
+  role          Role     @default(SELLER)
+  isActive      Boolean  @default(false)
+  emailVerified Boolean  @default(false)
+  mustChangePassword Boolean @default(true)  // ✅ NUEVO CAMPO
+  emailVerificationCode String?
+  emailVerificationExpiresAt DateTime?
+  failedLoginAttempts   Int       @default(0)
+  lockoutUntil          DateTime?
+
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+  
+  properties    Property[]
+}
+
+// Tabla de Inmuebles
+model Property {
+  id              String        @id @default(cuid())
+  title           String
+  description     String
+  operationType   OperationType
+  propertyType    PropertyType
+  price           Float
+  currency        String        @default("USD")
+  areaM2          Float
+  bedrooms        Int
+  bathrooms       Int
+  parkingSpots    Int           @default(0)
+  address         String
+  city            String
+  state           String        // Estados de Venezuela
+  municipality    String?
+  latitude        Float?
+  longitude       Float?
+  isPublished     Boolean       @default(true)
+  isFeatured      Boolean       @default(false)
+  isSold          Boolean       @default(false)
+  createdAt       DateTime      @default(now())
+  updatedAt       DateTime      @updatedAt
+  
+  sellerId        String
+  seller          User          @relation(fields: [sellerId], references: [id], onDelete: Cascade)
+  images          PropertyImage[]
+  
+  @@index([city])
+  @@index([operationType])
+  @@index([propertyType])
+}
+
+// Tabla de Imágenes de los Inmuebles
+model PropertyImage {
+  id          String   @id @default(cuid())
+  url         String
+  publicId    String?  // ID para borrar en ImageKit
+  isPrimary   Boolean  @default(false)
+  order       Int      @default(0)
+  propertyId  String
+  property    Property @relation(fields: [propertyId], references: [id], onDelete: Cascade)
+  createdAt   DateTime @default(now())
+}
