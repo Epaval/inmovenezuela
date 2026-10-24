@@ -14,7 +14,11 @@ export async function GET(_request: NextRequest, { params }: Params) {
       where: { id },
       include: {
         images: { orderBy: { order: 'asc' } },
-        seller: { select: { fullName: true, phone: true, email: true } },
+        seller: { select: {
+           id: true,
+           fullName: true,
+           phone: true,
+           email: true } },
       },
     });
 
